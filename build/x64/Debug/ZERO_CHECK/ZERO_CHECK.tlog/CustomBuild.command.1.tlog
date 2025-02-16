@@ -1,0 +1,10 @@
+^V:\DATAVISUALIZER\BUILD\CMAKEFILES\1CCD07A106877D4CE8C3D2FF5A09A915\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SV:/datavisualizer -BV:/datavisualizer/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file V:/datavisualizer/build/DATAVISUALIZER.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
